@@ -9,24 +9,24 @@ The project is based on a comprehensive literature review and a consumer survey 
 
 ## Key Components
 
-**Survey Data Analysis**: Conducted with Python (Pandas library), analyzing correlations between consumer preferences and behaviors.
+- **Survey Data Analysis**: Conducted with Python (Pandas library), analyzing correlations between consumer preferences and behaviors.
 
-**Agent-Based Model**: Implemented in NetLogo, simulating consumer interactions, product adoption, and marketing impact.
+- **Agent-Based Model**: Implemented in NetLogo, simulating consumer interactions, product adoption, and marketing impact.
 
-**Product Value Configuration**: Customizable through price, quality, and attributes such as cruelty-free, natural, and recycled packaging.
+- **Product Value Configuration**: Customizable through price, quality, and attributes such as cruelty-free, natural, and recycled packaging.
 
-**Agent Characteristic**s: Agents have attributes like influence status, intent to buy, and participation status.
+- **Agent Characteristic**s: Agents have attributes like influence status, intent to buy, and participation status.
 
-**Marketing Campaign Simulation**: Configurable frequency and reach to assess campaign effectiveness.
+- **Marketing Campaign Simulation**: Configurable frequency and reach to assess campaign effectiveness.
 
 
 ## Features
 
-**Customizable Parameters**: Adjust product value, agent count, influencer percentage, and marketing campaign details.
+- **Customizable Parameters**: Adjust product value, agent count, influencer percentage, and marketing campaign details.
 
-**Dynamic Interactions**: Agents interact based on status and influence, simulating real-world recommendation dynamics.
+- **Dynamic Interactions**: Agents interact based on status and influence, simulating real-world recommendation dynamics.
 
-**Comprehensive Analysis**: Supports evaluation of various product attributes and marketing strategies.
+- **Comprehensive Analysis**: Supports evaluation of various product attributes and marketing strategies.
 
 
 ## Setup and Usage
@@ -47,12 +47,12 @@ git clone https://github.com/username/sustainable-cosmetics-abm.git
 
 ## Running the Model
 
-Data Analysis:
+**Data Analysis:**
 
 - Run data_analysis.py to reproduce the survey data analysis.
 
 
-NetLogo Model:
+**NetLogo Model:**
 
 - Open sustainable_cosmetics_model.nlogo in NetLogo.
 
@@ -64,13 +64,18 @@ NetLogo Model:
 
 ## Project Structure
 
-**data/** - Survey data and analysis results.
+All files are stored in the main directory for simplicity.
 
-**scripts/** - Python scripts for data analysis.
+**data.csv** – Survey data collected from 281 respondents
 
-**model/** - NetLogo model files.
+**data_analysis.py** – Python script for analyzing the survey data
 
-**docs/** - Thesis documentation and supplementary materials.
+**sustainable_cosmetics.nlogo** – NetLogo agent-based model
+
+**README.md** – Project documentation (this file)
+
+**results.pdf** – Document with results
+
 
 
 ## Results

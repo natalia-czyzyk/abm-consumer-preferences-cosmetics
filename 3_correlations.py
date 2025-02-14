@@ -1,4 +1,8 @@
 import pandas as pd
+import matplotlib.pyplot as plt
+from textwrap import wrap
+from matplotlib.cm import Greens
+import numpy as np
 
 df = pd.read_csv('survey.csv')
 df = df.drop(columns = ['Sygnatura czasowa'])
@@ -18,62 +22,28 @@ df_num = df_num.replace(['bardzo ważne', 'ważne', 'średnio ważne', 'trochę 
 df_num = df_num.replace(['zdecydowanie się zgadzam', 'raczej się zgadzam', 'nie mam zdania/trudno powiedzieć', 'raczej się nie zgadzam', 'zdecydowanie się nie zgadzam'], [5, 4, 3, 2, 1])
 #df_num = df_num.replace(['zbyt wysoka cena', 'niska dostępność w sklepach stacjonarnych', 'brak dostrzegalnej różnicy w porównaniu z konwencjonalnymi kosmetykami', 'krótki okres przydatności do użycia', 'niski stopień wiedzy na temat kosmetyków zrównoważonych'], [1, 2, 3, 4, 5])
 
-# Columns to compare
-
 columns_names = ['D1', 'D2', 'D3', 'D4', 'D5', 'S1', 'F1', 'F2', 'F3', 'F4', 'F5', 'MC1', 'MC2', 'MC3', 'PI1', 'PI2', 'PI3', 'SI1', 'SI2', 'SI3', 'IB1', 'EA1', 'EA2', 'EA3']
 
+# Pearson correlation
 
+corr_df = pd.DataFrame(columns=['x', 'y', 'corr'])
 
-# Stats
+for i in range(len(columns_names)):
+    for j in range(len(columns_names)):
+        x = df_num[columns_names[i]]
+        y = df_num[columns_names[j]]
+        correlation = x.corr(y)
+        corr_df = corr_df.append({'x': columns_names[i], 'y': columns_names[j], 'corr': correlation}, ignore_index=True)
 
-df = df_num
+# Kendall correlation
 
-column_status = {}
+corr_df_kn = pd.DataFrame(columns=['x', 'y', 'corr'])
 
-# Iterate over each column
-for column in df.columns:
-    # Count the frequency of each unique value in the column
-    value_counts = df[column].value_counts().to_dict()
-    
-    # Store the frequency counts in the dictionary
-    column_status[column] = value_counts
-
-count = df.count()
-avg = df.mean()
-median = df.median()
-std = df.std()
-
-df = df.append(count, ignore_index=True)
-df = df.append(avg, ignore_index=True)
-df = df.append(median, ignore_index=True)
-df = df.append(std, ignore_index=True)
-
-
-
-
-'''
-#Separate stats
-
-df1 = df_num.dropna(subset=['F1'])
-df2 = df_num.dropna(subset=['R1'])
-
-count1 = df1.count()
-avg1 = df1.mean()
-median1 = df1.median()
-std1 = df1.std()
-
-df1 = df1.append(count1, ignore_index=True)
-df1 = df1.append(avg1, ignore_index=True)
-df1 = df1.append(median1, ignore_index=True)
-df1 = df1.append(std1, ignore_index=True)
-
-count2 = df2.count()
-avg2 = df2.mean()
-median2 = df2.median()
-std2 = df2.std()
-
-df2 = df2.append(count2, ignore_index=True)
-df2 = df2.append(avg2, ignore_index=True)
-df2 = df2.append(median2, ignore_index=True)
-df2 = df2.append(std2, ignore_index=True)
-'''
+for i in range(len(columns_names)):
+    for j in range(len(columns_names)):
+        x = df_num[columns_names[i]]
+        y = df_num[columns_names[j]]
+        correlation = x.corr(y, method='kendall')
+        corr_df_kn = corr_df.append({'x': columns_names[i], 'y': columns_names[j], 'corr': correlation}, ignore_index=True)
+        
+#same results, for Spearman as well

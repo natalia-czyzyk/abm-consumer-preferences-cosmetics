@@ -1,6 +1,6 @@
 # An agent-based analysis of consumer preferences in the introduction of novel sustainable cosmetics
 
-This repository contains the implementation of an agent-based model designed as part of a master's thesis to simulate the adoption and spread of sustainable cosmetics within a network of potential buyers. The model is intended to be a customizable, user-friendly tool for companies aiming to evaluate the impact of various product characteristics and marketing strategies on consumer behavior.
+This repository contains the code, data, and NetLogo model for the master's thesis project on simulating the adoption of sustainable cosmetics using an agent-based model.
 
 ## Project Overview
 

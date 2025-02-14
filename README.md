@@ -29,39 +29,6 @@ The project is based on a comprehensive literature review and a consumer survey 
 - **Comprehensive Analysis**: Supports evaluation of various product attributes and marketing strategies.
 
 
-## Setup and Usage
-
-Prerequisites:
-
-- Python 3.x for data analysis scripts
-
-- NetLogo 6.x for running the agent-based model
-
-
-## Installation
-
-Clone the repository:
-
-git clone https://github.com/username/sustainable-cosmetics-abm.git
-
-
-## Running the Model
-
-**Data Analysis:**
-
-- Run data_analysis.py to reproduce the survey data analysis.
-
-
-**NetLogo Model:**
-
-- Open sustainable_cosmetics_model.nlogo in NetLogo.
-
-- Configure parameters via the interface sliders.
-
-- Run simulations and observe product adoption dynamics.
-
-
-
 ## Project Structure
 
 All files are stored in the main directory for simplicity.
@@ -76,6 +43,37 @@ All files are stored in the main directory for simplicity.
 
 **results.pdf** – Document with results
 
+
+## Setup and Usage
+
+Prerequisites:
+
+- Python 3.x for data analysis scripts
+
+- NetLogo 6.x for running the agent-based model
+
+
+## Installation
+
+Clone the repository:
+
+**git clone https://github.com/username/sustainable-cosmetics-abm.git**
+
+
+## Running the Model
+
+**Data Analysis:**
+
+- Run **data_analysis.py** to reproduce the survey data analysis.
+
+
+**NetLogo Model:**
+
+- Open **sustainable_cosmetics_model.nlogo** in NetLogo.
+
+- Configure parameters via the interface sliders.
+
+- Run simulations and observe product adoption dynamics.
 
 
 ## Results

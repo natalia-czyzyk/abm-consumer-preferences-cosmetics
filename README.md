@@ -7,41 +7,26 @@ This repository contains the implementation of an agent-based model designed as 
 The project is based on a comprehensive literature review and a consumer survey conducted in Poland, with 281 respondents providing insights into their preferences and behaviors related to sustainable cosmetics. Data analysis was performed using Python, and the model was built in NetLogo.
 
 
-## Key Components
+## Key Components:
 
-- **Survey Data Analysis**: Conducted with Python (Pandas library), analyzing correlations between consumer preferences and behaviors.
+Survey Analysis: Conducted using Python (Pandas), with correlation analysis using Pearson, Spearman, and Kendall methods.
 
-- **Agent-Based Model**: Implemented in NetLogo, simulating consumer interactions, product adoption, and marketing impact.
-
-- **Product Value Configuration**: Customizable through price, quality, and attributes such as cruelty-free, natural, and recycled packaging.
-
-- **Agent Characteristic**s: Agents have attributes like influence status, intent to buy, and participation status.
-
-- **Marketing Campaign Simulation**: Configurable frequency and reach to assess campaign effectiveness.
-
-
-## Features
-
-- **Customizable Parameters**: Adjust product value, agent count, influencer percentage, and marketing campaign details.
-
-- **Dynamic Interactions**: Agents interact based on status and influence, simulating real-world recommendation dynamics.
-
-- **Comprehensive Analysis**: Supports evaluation of various product attributes and marketing strategies.
+Agent-Based Model: Implemented in NetLogo, allowing customization of product attributes, price, quality, and marketing campaigns.
 
 
 ## Project Structure
 
 All files are stored in the main directory for simplicity.
 
-**data.csv** – Survey data collected from 281 respondents
+- **data.csv** – Survey data collected from 281 respondents
 
-**data_analysis.py** – Python script for analyzing the survey data
+- **data_analysis.py** – Python script for analyzing the survey data
 
-**sustainable_cosmetics.nlogo** – NetLogo agent-based model
+- **sustainable_cosmetics.nlogo** – NetLogo agent-based model
 
-**README.md** – Project documentation (this file)
+- **README.md** – Project documentation (this file)
 
-**results.pdf** – Document with results
+- **results.pdf** – Document with results
 
 
 ## Setup and Usage

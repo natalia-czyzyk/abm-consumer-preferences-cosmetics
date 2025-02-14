@@ -38,13 +38,6 @@ Prerequisites:
 - NetLogo 6.x for running the agent-based model
 
 
-## Installation
-
-Clone the repository:
-
-**git clone https://github.com/username/sustainable-cosmetics-abm.git**
-
-
 ## Running the Model
 
 **Data Analysis:**

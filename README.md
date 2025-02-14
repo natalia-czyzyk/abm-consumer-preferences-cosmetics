@@ -77,21 +77,24 @@ NetLogo Model:
 
 The model helps in understanding:
 
-Influence of product attributes on adoption.
+- Influence of product attributes on adoption
 
-Effectiveness of marketing campaigns.
+- Effectiveness of marketing campaigns
 
-Dynamics of consumer behavior in the sustainable cosmetics market.
+- Dynamics of consumer behavior in the sustainable cosmetics market
 
 
 ## Contributors
 
 Natalia Czyżyk - Master's thesis author
+
 Prof. Anna Kowalska - Pyzalska - Master's thesis supervisor at Wrocław University of Science and Technology
 
 
 ## Acknowledgments
 
 Survey respondents and contributors
+
 Supervisors and academic mentors
+
 Open-source tools: Python, Pandas, NetLogo

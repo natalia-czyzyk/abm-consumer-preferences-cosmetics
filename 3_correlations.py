@@ -22,8 +22,6 @@ df_num = df_num.replace(['bardzo ważne', 'ważne', 'średnio ważne', 'trochę 
 df_num = df_num.replace(['zdecydowanie się zgadzam', 'raczej się zgadzam', 'nie mam zdania/trudno powiedzieć', 'raczej się nie zgadzam', 'zdecydowanie się nie zgadzam'], [5, 4, 3, 2, 1])
 #df_num = df_num.replace(['zbyt wysoka cena', 'niska dostępność w sklepach stacjonarnych', 'brak dostrzegalnej różnicy w porównaniu z konwencjonalnymi kosmetykami', 'krótki okres przydatności do użycia', 'niski stopień wiedzy na temat kosmetyków zrównoważonych'], [1, 2, 3, 4, 5])
 
-# Columns to compare
-
 columns_names = ['D1', 'D2', 'D3', 'D4', 'D5', 'S1', 'F1', 'F2', 'F3', 'F4', 'F5', 'MC1', 'MC2', 'MC3', 'PI1', 'PI2', 'PI3', 'SI1', 'SI2', 'SI3', 'IB1', 'EA1', 'EA2', 'EA3']
 
 # Pearson correlation

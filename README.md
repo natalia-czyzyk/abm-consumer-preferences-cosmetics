@@ -7,7 +7,7 @@ This repository contains the code, data, and NetLogo model for the master's thes
 The project is based on a comprehensive literature review and a consumer survey conducted in Poland, with 281 respondents providing insights into their preferences and behaviors related to sustainable cosmetics. Data analysis was performed using Python, and the model was built in NetLogo.
 
 
-## Key Components:
+## Key Components
 
 Survey Analysis: Conducted using Python (Pandas), with correlation analysis using Pearson, Spearman, and Kendall methods.
 

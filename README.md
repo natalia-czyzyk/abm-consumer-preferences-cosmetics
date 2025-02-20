@@ -26,8 +26,6 @@ All files are stored in the main directory for simplicity.
 
 - **README.md** – Project documentation (this file)
 
-- **results.pdf** – Document with results
-
 
 ## Setup and Usage
 

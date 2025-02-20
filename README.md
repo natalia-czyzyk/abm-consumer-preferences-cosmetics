@@ -26,6 +26,8 @@ All files are stored in the main directory for simplicity.
 
 - **README.md** – Project documentation (this file)
 
+- **results.pdf** - Results and conclusion from the data analysis.
+
 
 ## Setup and Usage
 
